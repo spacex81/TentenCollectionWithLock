@@ -4,7 +4,7 @@ struct ContentView: View {
     var body: some View {
         CustomCollectionViewRepresentable()
             .edgesIgnoringSafeArea(.all)
-            .frame(height: 100)
+            .frame(height: 300)
     }
 }
 

@@ -2,13 +2,10 @@ import SwiftUI
 import UIKit
 
 struct CustomCollectionViewRepresentable: UIViewRepresentable {
-    
-    
-    func makeUIView(context: Context) -> UIView {
+    func makeUIView(context: Context) -> some UIView {
         return CustomCollectionViewContainer()
     }
     
-    func updateUIView(_ uiView: UIView, context: Context) {
-        // Update the view controller if needed
+    func updateUIView(_ uiView: UIViewType, context: Context) {
     }
 }
