@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		C8B519432C78D68C001236EE /* CustomCollectionViewRepresentable.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8B519422C78D68C001236EE /* CustomCollectionViewRepresentable.swift */; };
 		C8B519452C78D6C8001236EE /* CustomCollectionViewContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8B519442C78D6C8001236EE /* CustomCollectionViewContainer.swift */; };
+		C8B519472C78E1C1001236EE /* CustomCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8B519462C78E1C1001236EE /* CustomCollectionViewController.swift */; };
+		C8B519492C78E1CD001236EE /* CustomCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8B519482C78E1CD001236EE /* CustomCollectionViewCell.swift */; };
 		C8DA4A612C788AB90063FC96 /* TentenCollectionWithLockApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8DA4A602C788AB90063FC96 /* TentenCollectionWithLockApp.swift */; };
 		C8DA4A632C788AB90063FC96 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8DA4A622C788AB90063FC96 /* ContentView.swift */; };
 		C8DA4A652C788ABA0063FC96 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C8DA4A642C788ABA0063FC96 /* Assets.xcassets */; };
@@ -18,6 +20,8 @@
 /* Begin PBXFileReference section */
 		C8B519422C78D68C001236EE /* CustomCollectionViewRepresentable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomCollectionViewRepresentable.swift; sourceTree = "<group>"; };
 		C8B519442C78D6C8001236EE /* CustomCollectionViewContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomCollectionViewContainer.swift; sourceTree = "<group>"; };
+		C8B519462C78E1C1001236EE /* CustomCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomCollectionViewController.swift; sourceTree = "<group>"; };
+		C8B519482C78E1CD001236EE /* CustomCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomCollectionViewCell.swift; sourceTree = "<group>"; };
 		C8DA4A5D2C788AB90063FC96 /* TentenCollectionWithLock.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TentenCollectionWithLock.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C8DA4A602C788AB90063FC96 /* TentenCollectionWithLockApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TentenCollectionWithLockApp.swift; sourceTree = "<group>"; };
 		C8DA4A622C788AB90063FC96 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -59,6 +63,8 @@
 				C8DA4A622C788AB90063FC96 /* ContentView.swift */,
 				C8B519422C78D68C001236EE /* CustomCollectionViewRepresentable.swift */,
 				C8B519442C78D6C8001236EE /* CustomCollectionViewContainer.swift */,
+				C8B519462C78E1C1001236EE /* CustomCollectionViewController.swift */,
+				C8B519482C78E1CD001236EE /* CustomCollectionViewCell.swift */,
 				C8DA4A642C788ABA0063FC96 /* Assets.xcassets */,
 				C8DA4A662C788ABA0063FC96 /* Preview Content */,
 			);
@@ -144,7 +150,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				C8DA4A632C788AB90063FC96 /* ContentView.swift in Sources */,
+				C8B519492C78E1CD001236EE /* CustomCollectionViewCell.swift in Sources */,
 				C8DA4A612C788AB90063FC96 /* TentenCollectionWithLockApp.swift in Sources */,
+				C8B519472C78E1C1001236EE /* CustomCollectionViewController.swift in Sources */,
 				C8B519432C78D68C001236EE /* CustomCollectionViewRepresentable.swift in Sources */,
 				C8B519452C78D6C8001236EE /* CustomCollectionViewContainer.swift in Sources */,
 			);
