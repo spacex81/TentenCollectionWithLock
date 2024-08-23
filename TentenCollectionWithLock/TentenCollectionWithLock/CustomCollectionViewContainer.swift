@@ -69,4 +69,14 @@ class CustomCollectionViewContainer: UIView {
             collectionView.heightAnchor.constraint(equalToConstant: 100)
         ])
     }
+    
+    override func hitTest(_ point: CGPoint, with event: UIEvent?) -> UIView? {
+        // Check if the touch is within the lockView
+        if lockView.bounds.contains(convert(point, to: lockView)) {
+            // Forward the touch to the collectionView if it is within lockView
+            return collectionViewController.view
+        }
+        // Otherwise, return the default view to handle the touch
+        return super.hitTest(point, with: event)
+    }
 }
