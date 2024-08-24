@@ -44,6 +44,8 @@ class CustomCollectionViewCell: UICollectionViewCell {
     @objc private func handleLongPress(_ gestureRecognizer: UILongPressGestureRecognizer) {
         switch gestureRecognizer.state {
         case .began:
+            viewModel.isPressing = true
+            viewModel.isLocked = false
             backgroundColor = UIColor.red
             viewModel.progress = 0
             longPressGestureBeganPoint = gestureRecognizer.location(in: contentView)
@@ -53,10 +55,12 @@ class CustomCollectionViewCell: UICollectionViewCell {
             let lockProgress = Float(verticalDistance / lockDistance)
             if lockProgress >= 1 {
                 print("change isLocked value to true")
+                viewModel.isLocked = true
             } else {
                 viewModel.progress = lockProgress
             }
         case .ended, .cancelled:
+            viewModel.isPressing = false
             backgroundColor = UIColor.blue
         default:
             break

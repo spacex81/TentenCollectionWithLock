@@ -7,8 +7,10 @@ struct LockViewRepresentable: UIViewRepresentable {
     var onLockedIconZoomAnimationCompletion: () -> Void
     
     func makeUIView(context: Context) -> LockView {
-        let recorderLockView = LockView()
-        return recorderLockView
+        let lockView = LockView()
+        lockView.layer.borderColor = UIColor.red.cgColor
+        lockView.layer.borderWidth = 10
+        return lockView
     }
     
     func updateUIView(_ uiView: LockView, context: Context) {

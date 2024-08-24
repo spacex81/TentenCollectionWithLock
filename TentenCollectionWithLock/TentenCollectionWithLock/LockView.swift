@@ -45,6 +45,8 @@ class LockView: UIView {
         super.layoutSubviews()
         if !isLocked {
             let progress = max(0, min(1, CGFloat(self.progress)))
+            
+            let centerX = (bounds.width - BackgroundSize.start.width) / 2
 
             // Calculate the background origin and size
             let backgroundOriginX = BackgroundOrigin.start.x + (BackgroundOrigin.end.x - BackgroundOrigin.start.x) * progress
@@ -53,24 +55,24 @@ class LockView: UIView {
             let backgroundHeight = BackgroundSize.start.height + (BackgroundSize.end.height - BackgroundSize.start.height) * progress
 
             backgroundImageView.frame = CGRect(
-                origin: CGPoint(x: backgroundOriginX, y: backgroundOriginY),
+                origin: CGPoint(x: centerX + backgroundOriginX, y: backgroundOriginY),
                 size: CGSize(width: backgroundWidth, height: backgroundHeight)
             )
 
             // Calculate the lock body center
             let lockBodyCenterX = LockBodyCenter.start.x + (LockBodyCenter.end.x - LockBodyCenter.start.x) * progress
             let lockBodyCenterY = LockBodyCenter.start.y + (LockBodyCenter.end.y - LockBodyCenter.start.y) * progress
-            lockBodyImageView.center = CGPoint(x: lockBodyCenterX, y: lockBodyCenterY)
+            lockBodyImageView.center = CGPoint(x: centerX + lockBodyCenterX, y: lockBodyCenterY)
 
             // Calculate the lock shackle center
             let lockShackleCenterX = LockShackleCenter.start.x + (LockShackleCenter.end.x - LockShackleCenter.start.x) * progress
             let lockShackleCenterY = LockShackleCenter.start.y + (LockShackleCenter.end.y - LockShackleCenter.start.y) * progress
-            lockShackleImageView.center = CGPoint(x: lockShackleCenterX, y: lockShackleCenterY)
+            lockShackleImageView.center = CGPoint(x: centerX + lockShackleCenterX, y: lockShackleCenterY)
 
             // Calculate the direction indicator center
             let directionIndicatorCenterX = DirectionIndicatorCenter.start.x + (DirectionIndicatorCenter.end.x - DirectionIndicatorCenter.start.x) * progress
             let directionIndicatorCenterY = DirectionIndicatorCenter.start.y + (DirectionIndicatorCenter.end.y - DirectionIndicatorCenter.start.y) * progress
-            directionIndicatorImageView.center = CGPoint(x: directionIndicatorCenterX, y: directionIndicatorCenterY)
+            directionIndicatorImageView.center = CGPoint(x: centerX + directionIndicatorCenterX, y: directionIndicatorCenterY)
 
             // Adjust alpha based on progress
             directionIndicatorImageView.alpha = 1 - progress
@@ -135,6 +137,7 @@ extension LockView {
         static let start = CGSize(width: UIImage(named: "bg_recorder_lock")?.size.width ?? 0, height: 150)
         static let end = UIImage(named: "bg_recorder_lock")?.size ?? .zero
     }
+    
     
     enum DirectionIndicatorTopMargin {
         static let start: CGFloat = 20
