@@ -11,9 +11,6 @@ struct ContentView: View {
             .frame(width: 200, height: 300) // Set frame size as needed
             .padding()
             
-            Slider(value: $viewModel.progress, in: 0...1)
-                .padding()
-            
             // Provide the items for the collection view
             CustomCollectionViewRepresentable(items: viewModel.items)
                 .edgesIgnoringSafeArea(.all)

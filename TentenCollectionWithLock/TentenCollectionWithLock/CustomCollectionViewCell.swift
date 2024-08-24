@@ -3,6 +3,8 @@ import UIKit
 class CustomCollectionViewCell: UICollectionViewCell {
     static let identifier = "CustomCollectionViewCell"
     
+    private let viewModel = ContentViewModel.shared
+    
     private let label: UILabel = {
         let label = UILabel()
         label.textAlignment = .center
@@ -12,8 +14,8 @@ class CustomCollectionViewCell: UICollectionViewCell {
     
     private let longPressGestureRecognizer = UILongPressGestureRecognizer()
     
-    // Property to track long press state
-    private var isPressed = false
+    private let lockDistance: CGFloat = 100
+    private var longPressGestureBeganPoint = CGPoint.zero
     
     override init(frame: CGRect) {
         super.init(frame: frame)
@@ -43,10 +45,19 @@ class CustomCollectionViewCell: UICollectionViewCell {
         switch gestureRecognizer.state {
         case .began:
             backgroundColor = UIColor.red
-            isPressed = true
+            viewModel.progress = 0
+            longPressGestureBeganPoint = gestureRecognizer.location(in: contentView)
+        case .changed:
+            let location = gestureRecognizer.location(in: contentView)
+            let verticalDistance = longPressGestureBeganPoint.y - location.y
+            let lockProgress = Float(verticalDistance / lockDistance)
+            if lockProgress >= 1 {
+                print("change isLocked value to true")
+            } else {
+                viewModel.progress = lockProgress
+            }
         case .ended, .cancelled:
             backgroundColor = UIColor.blue
-            isPressed = false
         default:
             break
         }
