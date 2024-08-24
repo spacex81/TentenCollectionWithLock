@@ -8,10 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		C89CF9B02C79A631004D2C59 /* ContentViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C89CF9AF2C79A631004D2C59 /* ContentViewModel.swift */; };
-		C8B519432C78D68C001236EE /* CustomCollectionViewRepresentable.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8B519422C78D68C001236EE /* CustomCollectionViewRepresentable.swift */; };
-		C8B519452C78D6C8001236EE /* CustomCollectionViewContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8B519442C78D6C8001236EE /* CustomCollectionViewContainer.swift */; };
-		C8B519472C78E1C1001236EE /* CustomCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8B519462C78E1C1001236EE /* CustomCollectionViewController.swift */; };
-		C8B519492C78E1CD001236EE /* CustomCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8B519482C78E1CD001236EE /* CustomCollectionViewCell.swift */; };
+		C89CF9B62C79A7E8004D2C59 /* CustomCollectionViewRepresentable.swift in Sources */ = {isa = PBXBuildFile; fileRef = C89CF9B52C79A7E8004D2C59 /* CustomCollectionViewRepresentable.swift */; };
+		C89CF9B82C79A7F2004D2C59 /* CustomCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C89CF9B72C79A7F2004D2C59 /* CustomCollectionViewController.swift */; };
+		C89CF9BA2C79A7FF004D2C59 /* CustomCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C89CF9B92C79A7FF004D2C59 /* CustomCollectionViewCell.swift */; };
+		C89CF9BC2C79AAEF004D2C59 /* CollectionViewDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = C89CF9BB2C79AAEF004D2C59 /* CollectionViewDataSource.swift */; };
 		C8DA4A612C788AB90063FC96 /* TentenCollectionWithLockApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8DA4A602C788AB90063FC96 /* TentenCollectionWithLockApp.swift */; };
 		C8DA4A632C788AB90063FC96 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8DA4A622C788AB90063FC96 /* ContentView.swift */; };
 		C8DA4A652C788ABA0063FC96 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C8DA4A642C788ABA0063FC96 /* Assets.xcassets */; };
@@ -22,10 +22,10 @@
 
 /* Begin PBXFileReference section */
 		C89CF9AF2C79A631004D2C59 /* ContentViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentViewModel.swift; sourceTree = "<group>"; };
-		C8B519422C78D68C001236EE /* CustomCollectionViewRepresentable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomCollectionViewRepresentable.swift; sourceTree = "<group>"; };
-		C8B519442C78D6C8001236EE /* CustomCollectionViewContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomCollectionViewContainer.swift; sourceTree = "<group>"; };
-		C8B519462C78E1C1001236EE /* CustomCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomCollectionViewController.swift; sourceTree = "<group>"; };
-		C8B519482C78E1CD001236EE /* CustomCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomCollectionViewCell.swift; sourceTree = "<group>"; };
+		C89CF9B52C79A7E8004D2C59 /* CustomCollectionViewRepresentable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomCollectionViewRepresentable.swift; sourceTree = "<group>"; };
+		C89CF9B72C79A7F2004D2C59 /* CustomCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomCollectionViewController.swift; sourceTree = "<group>"; };
+		C89CF9B92C79A7FF004D2C59 /* CustomCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomCollectionViewCell.swift; sourceTree = "<group>"; };
+		C89CF9BB2C79AAEF004D2C59 /* CollectionViewDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewDataSource.swift; sourceTree = "<group>"; };
 		C8DA4A5D2C788AB90063FC96 /* TentenCollectionWithLock.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TentenCollectionWithLock.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C8DA4A602C788AB90063FC96 /* TentenCollectionWithLockApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TentenCollectionWithLockApp.swift; sourceTree = "<group>"; };
 		C8DA4A622C788AB90063FC96 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -68,12 +68,12 @@
 				C8DA4A602C788AB90063FC96 /* TentenCollectionWithLockApp.swift */,
 				C8DA4A622C788AB90063FC96 /* ContentView.swift */,
 				C89CF9AF2C79A631004D2C59 /* ContentViewModel.swift */,
-				C8B519422C78D68C001236EE /* CustomCollectionViewRepresentable.swift */,
-				C8B519442C78D6C8001236EE /* CustomCollectionViewContainer.swift */,
-				C8B519462C78E1C1001236EE /* CustomCollectionViewController.swift */,
-				C8B519482C78E1CD001236EE /* CustomCollectionViewCell.swift */,
 				C8EFF1F82C78E9870066743E /* LockViewRepresentable.swift */,
 				C8EFF1F62C78E8FE0066743E /* LockView.swift */,
+				C89CF9B52C79A7E8004D2C59 /* CustomCollectionViewRepresentable.swift */,
+				C89CF9B72C79A7F2004D2C59 /* CustomCollectionViewController.swift */,
+				C89CF9BB2C79AAEF004D2C59 /* CollectionViewDataSource.swift */,
+				C89CF9B92C79A7FF004D2C59 /* CustomCollectionViewCell.swift */,
 				C8DA4A642C788ABA0063FC96 /* Assets.xcassets */,
 				C8DA4A662C788ABA0063FC96 /* Preview Content */,
 			);
@@ -158,15 +158,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C89CF9B82C79A7F2004D2C59 /* CustomCollectionViewController.swift in Sources */,
 				C8EFF1F72C78E8FE0066743E /* LockView.swift in Sources */,
 				C8DA4A632C788AB90063FC96 /* ContentView.swift in Sources */,
-				C8B519492C78E1CD001236EE /* CustomCollectionViewCell.swift in Sources */,
+				C89CF9BA2C79A7FF004D2C59 /* CustomCollectionViewCell.swift in Sources */,
+				C89CF9BC2C79AAEF004D2C59 /* CollectionViewDataSource.swift in Sources */,
 				C8DA4A612C788AB90063FC96 /* TentenCollectionWithLockApp.swift in Sources */,
 				C8EFF1F92C78E9870066743E /* LockViewRepresentable.swift in Sources */,
 				C89CF9B02C79A631004D2C59 /* ContentViewModel.swift in Sources */,
-				C8B519472C78E1C1001236EE /* CustomCollectionViewController.swift in Sources */,
-				C8B519432C78D68C001236EE /* CustomCollectionViewRepresentable.swift in Sources */,
-				C8B519452C78D6C8001236EE /* CustomCollectionViewContainer.swift in Sources */,
+				C89CF9B62C79A7E8004D2C59 /* CustomCollectionViewRepresentable.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
