@@ -8,8 +8,6 @@ struct LockViewRepresentable: UIViewRepresentable {
     
     func makeUIView(context: Context) -> LockView {
         let lockView = LockView()
-        lockView.layer.borderColor = UIColor.red.cgColor
-        lockView.layer.borderWidth = 10
         return lockView
     }
     
@@ -17,9 +15,5 @@ struct LockViewRepresentable: UIViewRepresentable {
         uiView.isLocked = isLocked
         uiView.progress = progress
         
-        // If you need to trigger the zoom animation from SwiftUI
-        if isLocked {
-            uiView.performLockedIconZoomAnimation(completion: onLockedIconZoomAnimationCompletion)
-        }
     }
 }

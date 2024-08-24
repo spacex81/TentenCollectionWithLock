@@ -5,15 +5,11 @@ class LockView: UIView {
     let backgroundImageView = UIImageView(image: UIImage(named: "bg_recorder_lock"))
     let lockShackleImageView = UIImageView(image: UIImage(named: "ic_recorder_lock_shackle"))
     let lockBodyImageView = UIImageView(image: UIImage(named: "ic_recorder_lock_body"))
-    let lockedImageView = UIImageView(image: UIImage(named: "ic_recorder_lock_locked"))
     let directionIndicatorImageView = UIImageView(image: UIImage(named: "ic_recorder_lock_direction_up"))
     
-    private let lockedIconZoomingTransform = CGAffineTransform(scaleX: 1.3, y: 1.3)
-    private let lockedIconZoomingAnimationDuration: TimeInterval = 0.2
     
     var isLocked = false {
         didSet {
-            lockedImageView.isHidden = !isLocked
             backgroundImageView.isHidden = isLocked
             lockShackleImageView.isHidden = isLocked
             lockBodyImageView.isHidden = isLocked
@@ -87,20 +83,8 @@ class LockView: UIView {
         addSubview(lockShackleImageView)
         addSubview(lockBodyImageView)
         addSubview(directionIndicatorImageView)
-        lockedImageView.frame.origin = BackgroundOrigin.end
-        addSubview(lockedImageView)
     }
     
-    func performLockedIconZoomAnimation(completion: @escaping () -> Void) {
-        UIView.animate(withDuration: lockedIconZoomingAnimationDuration, delay: 0, options: .curveEaseIn, animations: {
-            self.lockedImageView.transform = self.lockedIconZoomingTransform
-        }, completion: nil)
-        UIView.animate(withDuration: lockedIconZoomingAnimationDuration, delay: lockedIconZoomingAnimationDuration, options: [.curveEaseOut, .beginFromCurrentState], animations: {
-            self.lockedImageView.transform = .identity
-        }) { (_) in
-            completion()
-        }
-    }
     
     // Helper function to get image sizes
     private func imageSize(for imageName: String) -> CGSize {
