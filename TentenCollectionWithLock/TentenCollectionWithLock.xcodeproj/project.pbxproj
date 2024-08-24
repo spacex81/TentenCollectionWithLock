@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C89CF9B02C79A631004D2C59 /* ContentViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C89CF9AF2C79A631004D2C59 /* ContentViewModel.swift */; };
 		C8B519432C78D68C001236EE /* CustomCollectionViewRepresentable.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8B519422C78D68C001236EE /* CustomCollectionViewRepresentable.swift */; };
 		C8B519452C78D6C8001236EE /* CustomCollectionViewContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8B519442C78D6C8001236EE /* CustomCollectionViewContainer.swift */; };
 		C8B519472C78E1C1001236EE /* CustomCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8B519462C78E1C1001236EE /* CustomCollectionViewController.swift */; };
@@ -20,6 +21,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		C89CF9AF2C79A631004D2C59 /* ContentViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentViewModel.swift; sourceTree = "<group>"; };
 		C8B519422C78D68C001236EE /* CustomCollectionViewRepresentable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomCollectionViewRepresentable.swift; sourceTree = "<group>"; };
 		C8B519442C78D6C8001236EE /* CustomCollectionViewContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomCollectionViewContainer.swift; sourceTree = "<group>"; };
 		C8B519462C78E1C1001236EE /* CustomCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomCollectionViewController.swift; sourceTree = "<group>"; };
@@ -65,6 +67,7 @@
 			children = (
 				C8DA4A602C788AB90063FC96 /* TentenCollectionWithLockApp.swift */,
 				C8DA4A622C788AB90063FC96 /* ContentView.swift */,
+				C89CF9AF2C79A631004D2C59 /* ContentViewModel.swift */,
 				C8B519422C78D68C001236EE /* CustomCollectionViewRepresentable.swift */,
 				C8B519442C78D6C8001236EE /* CustomCollectionViewContainer.swift */,
 				C8B519462C78E1C1001236EE /* CustomCollectionViewController.swift */,
@@ -160,6 +163,7 @@
 				C8B519492C78E1CD001236EE /* CustomCollectionViewCell.swift in Sources */,
 				C8DA4A612C788AB90063FC96 /* TentenCollectionWithLockApp.swift in Sources */,
 				C8EFF1F92C78E9870066743E /* LockViewRepresentable.swift in Sources */,
+				C89CF9B02C79A631004D2C59 /* ContentViewModel.swift in Sources */,
 				C8B519472C78E1C1001236EE /* CustomCollectionViewController.swift in Sources */,
 				C8B519432C78D68C001236EE /* CustomCollectionViewRepresentable.swift in Sources */,
 				C8B519452C78D6C8001236EE /* CustomCollectionViewContainer.swift in Sources */,
